@@ -1,0 +1,80 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 20%);
+    --dark-gray: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+    font-family: "Inter";
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--off-black);
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    margin-top: 10px;
+    background-color: var(--dark-gray);
+    border-radius: 20px;
+}
+
+.header img {
+    border-radius: 50%;
+    height: 100px;
+    margin-top: 50px;
+}
+
+.name {
+    color: var(--white);
+}
+
+.city {
+    color: var(--green);
+}
+
+.description {
+    color: var(--white);
+}
+
+.social {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.social a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: var(--gray);
+    color: var(--white);
+    margin: 10px;
+    width: 350px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.social a:hover {
+    background-color: var(--green);
+    color: var(--dark-gray);
+}
+
+.attribution {
+    color: #fff;
+    margin-top: 5px;
+}

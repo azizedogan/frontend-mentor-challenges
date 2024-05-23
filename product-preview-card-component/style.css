@@ -1,0 +1,145 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cream);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 550px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 10px;
+    background-color: var(--white);
+}
+
+.desktop-img {
+    height: 400px;
+    width: -webkit-fill-available;
+    border-radius: 10px 0 0 10px;
+}
+
+.mobile-img {
+    display: none;
+}
+
+.item2 {
+    padding: 10px;
+}
+
+.category {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 5px;
+}
+
+.heading {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+}
+
+.content {
+    color: var(--dark-grayish-blue);
+}
+
+.price-wrap {
+    margin: 10px;
+}
+
+.price {
+    font-family: "Fraunces", serif;
+    color: var(--dark-cyan);
+    font-weight: 700;
+    font-size: 22px;
+    margin-right: 10px;
+}
+
+.old-price {
+    font-size: 14px;
+    color: var(--dark-grayish-blue);
+}
+
+button {
+    width: 250px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--dark-cyan);
+    background-color: var(--dark-cyan);
+    color: var(--white);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a4031;
+}
+
+#fa-icon {
+    margin-right: 10px;
+}
+
+button span {
+    font-weight: bold;
+}
+
+.attribution {
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .container {
+        width: 300px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .item1 {
+        width: 300px;
+    }
+
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        width: 300px;
+        display: block;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .item2 {
+        font-size: 14px;
+        padding: 15px;
+        
+    }
+}

@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+    font-family: "Figtree", sans-serif;
+}
+
+.container {
+    width: 450px;
+    height: 600px;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 10px 10px 0px 0px hsl(0, 0%, 7%);
+}
+
+.container:hover {
+    box-shadow: 15px 15px 0px 0px hsl(0, 0%, 7%);
+
+}
+
+.head-img {
+    padding: 10px;
+}
+
+.head-img img {
+    border-radius: 15px;
+    width: 400px;
+    margin-top: 10px;
+}
+
+.content {
+    margin: 25px;
+    padding: 5px;
+}
+
+.learn {
+    background-color: hsl(47, 88%, 63%);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+.date {
+    margin-top: 5px;
+}
+
+.header {
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.header:hover {
+    color: hsl(47, 88%, 63%);
+}
+
+.description {
+    font-size: 20px;
+    color: hsl(0, 0%, 50%);
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.profile span {
+    margin-left: 15px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.footer {
+    margin-top: 5px;
+}
